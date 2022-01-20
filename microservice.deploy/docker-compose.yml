@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  web.api:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: Web.API/Dockerfile
+
+  web.mvc:
+    image: ${DOCKER_REGISTRY-}webmvc
+    build:
+      context: .
+      dockerfile: Web.Mvc/Dockerfile
+
+  shopping.db:
+    image: mongo
+

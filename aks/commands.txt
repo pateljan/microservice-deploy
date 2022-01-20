@@ -1,0 +1,2 @@
+
+ACRLogin Server : shoppingacr.azurecr.io
